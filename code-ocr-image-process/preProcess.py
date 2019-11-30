@@ -17,7 +17,10 @@ def preProcess(image):
 	return image
 
 
-if __name__ == "__main__":
+def main():
 	image = Image.open("image.jpg")
 	image = preProcess(image)
 	image.save("preprocessed.jpg")
+
+if __name__ == "__main__":
+	main()
