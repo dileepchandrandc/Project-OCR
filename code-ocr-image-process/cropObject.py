@@ -85,9 +85,10 @@ def cropObject(image):
 	image = image.resize((int(image_size[0] * scale), int(image_size[1] * scale)))
 	return image
 
-
-
-if __name__ == "__main__":
+def main():
 	image = Image.open("preprocessed.jpg")
 	image = cropObject(image)
 	image.save("croped.jpg")
+
+if __name__ == "__main__":
+	main()
