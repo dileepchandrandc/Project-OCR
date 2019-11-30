@@ -25,9 +25,10 @@ def findLines(image_name):
 	print(f, k)
 	return image
 
-
-
-if __name__ == "__main__":
+def main():
 	image = "croped.jpg"
 	image = findLines(image)
 	image.save("ruled.jpg")
+
+if __name__ == "__main__":
+	main()
